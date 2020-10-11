@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan(basePackages = "com.itheima.mapper")
 @EnableDubbo(scanBasePackages = "com.itheima.service.impl")
-public class ProviderStart {
+public class ProviderStarter {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProviderStart.class,args);
+        SpringApplication.run(ProviderStarter.class,args);
     }
 }

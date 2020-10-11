@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-public class ConsumerStart {
+public class ConsumerStarter {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerStart.class,args);
+        SpringApplication.run(ConsumerStarter.class,args);
     }
 }
