@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dubbotest?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 1234
+dubbo:
+  application:
+    name: annotation-springboot-provider
+  registry:
+    address: zookeeper://localhost:2181
+  protocol:
+      name: dubbo
+      port: -1
+#  scan:
+    ##    base-packages: com.itheima.service.impl

@@ -1,0 +1,12 @@
+server:
+  port: 8082
+dubbo:
+  application:
+    name: annotation-springboot-consumer
+  registry:
+    address: zookeeper://localhost:2181
+  consumer:
+      check: false
+  protocol:
+      name: dubbo
+      port: -1
